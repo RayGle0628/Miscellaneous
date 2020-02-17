@@ -1,0 +1,155 @@
+Question 1 [10 points]
+Find the names of all customers who have rented foreign and horror films. (Check that there are some)
+
+ 
+
+Question 2 [10 points]
+Find the first name and last name of all customers that live in the United Kingdom.
+
+ 
+
+Question 3 [10 points]
+Find all the films that are not in the inventory.
+
+ 
+
+Question 4 [10 points]
+Find the title of all films with replacement cost larger than 15.99.
+
+ 
+
+Relational Algebra - Part B
+The following questions related to relational algebra require that you prove certain properties about various operations. 
+
+ 
+
+Marking Criteria - Part B
+Questions in this section  will be marked based on the following criteria: 
+
+Clear logical description of your reasoning for why something is (or is not) the case will account for 3 of the 5 points allocated to each question.
+1 of the 5 points is allocated to clear and neat illustrations that support your argument. 
+1 of the 5 points is allocated to a clear and relevant example that supports your argument.
+ 
+
+Question 5 [5 points]
+Show that the intersection of A and B is equivalent to the natural join of A and B. Show that anything that can be achieved by use of intersection can be achieved by use of a natural join - You are required to show that the intersection of A and B results in the same set as the natural join of A and B. Use an illustration and an example to support your argument. 
+
+ 
+
+Question 6 [5 points]
+Does natural join increase expressive power of relational algebra? Why? Use an example, with the help of an illustration, to support your argument. 
+
+ 
+
+Question 7 [5 points]
+ Does intersection increase expressive power of relational algebra. Why? Use an example, with the help of an illustration, to support your argument. 
+
+ 
+
+Question 8 [5 points]
+Does the rename operator increase expressive power? Why? Use an example, with the help of an illustration, to show how the rename operator is used in self joins. 
+
+ 
+
+Marking Criteria - Functional Dependencies and BCNF
+Questions in these sections  will be marked based on the following criteria: 
+
+Clear logical description of your reasoning for why something is (or is not) the case will account for 4 of the 10 points allocated to each question.
+This includes the clear listing out of all steps involved.
+Please note that when asked which of several possibilities is correct, it is NOT sufficient to show why something is correct. You must also show why the rest are incorrect. 
+Clearly describing the method you are following is allocated 2 of the 10 points. 
+For example, if you use the algorithm to find the closure, you must explicitly state this along with details of each of the steps. 
+The correctness of your solutions is allocated 4 of the 10 points. 
+If your solutions is partially correct, partial points will be awarded at the discretion of the grader. 
+ 
+
+Functional Dependencies
+The following questions pertain to Functional Dependencies. 
+
+ 
+
+Question 9 [15 points]
+The relation R( A, B, C, D, E ) has the functional dependencies B,C → D and D,E → A.
+
+Assume that there are a maximum of: 
+
+2 values for B
+3 values for C
+5 values for E
+What is the maximum number of possible values for A? Why?
+
+ 
+
+Question 10 [5 points]
+Consider the relation StudentModuleOptions(StudentID, ModuleID, ModuleMark, Term). What real-world constraint is captured by each of: 
+
+StudentID, ModuleID → ModuleMark
+ModuleID → Term
+ 
+
+Question 11 [10 points]
+Consider relation R(A,B,C,D,E) with functional dependencies:
+
+AB → C
+AE → D
+D  → B
+Which of the following functional dependencies follow from the above? Why?
+
+DB → A
+AB → D
+ABE → C
+ABC → DE
+ 
+
+Question 12 [10 points]
+Consider relation R(A,B,C,D,E) with functional dependencies:
+
+E    → D
+DA → B
+D    → B
+BA → E
+ 
+
+Which of the following is a key? Why?
+
+CE
+BE
+DEA
+BCA
+ 
+
+Question 13 [10 points]
+Suppose relation R(A,B,C,D) currently has only the tuple (1,2,3,4), and it must always satisfy the functional dependencies A → B and B → D. Which of the following tuples may be inserted into R legally? Why?
+
+(1, 3, 4, 5)
+(6, 2, 8, 4)
+(9, 8, 3, 7)
+ 
+
+Boyce-Codd Normal Form (BCNF)
+The following questions pertain to BCNF. 
+
+ 
+
+Question 14 [10 points]
+Consider relation R(A,B,C,D) with functional dependencies:
+
+B → C
+D→ A
+BA → D
+CD → B
+Decompose R into Boyce-Codd Normal Form (BCNF). Clearly show all intermediary steps. 
+
+ 
+
+Question 15 [10 points]
+Suppose R(A,B,C,D,E) be a relation in BCNF and ABD is a key for R. Which of the following functional dependencies MUST also hold for R given only this information? Why?
+
+ABC → D
+ABCE → D
+A → C
+ABCD → E
+ 
+
+Question 16 [10 points]
+Decompose the relation R(A,B,C,D,E) with functional dependencies E → C and DA → B into BCNF. Show all your steps clearly. 
